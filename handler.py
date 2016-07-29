@@ -42,7 +42,42 @@ def response_handler(body, a, b, c, d):
         message = "Ok so now we only have 4 more personalities. So are you 'thinking' or 'feeling'?"
         return message, a, b, c, d   
 
-    elif a == 1 and b == 2 and c == 1 and d == 2:
+    elif a == 1 and b == 1 and c == 1 and d == 1:
+        message = "Ok, your personality is 'The Debater'.  Here is a link to learn more about your personality https://www.16personalities.com/entp-personality"
+        return message, a, b, c, d
+
+    elif a == 1 and b == 1 and c == 1 and d == 1:
+        message = "Ok, your personality is 'The Logician'.  Here is a link to learn more about your personality https://www.16personalities.com/intp-personality"
+        return message, a, b, c, d
+
+    elif a == 1 and b == 1 and c == 1 and d == 1:
+        message = "Ok, your personality is 'The Entrepreneur'.  Here is a link to learn more about your personality https://www.16personalities.com/estp-personality"
+        return message, a, b, c, d
+
+    elif a == 1 and b == 1 and c == 1 and d == 1:
+        message = "Ok, your personality is 'The Virtuoso'.  Here is a link to learn more about your personality https://www.16personalities.com/istp-personality"
+        return message, a, b, c, d
+    
+    elif a == 1 and b == 1 and c == 1 and d == 1:
+        message = "Ok, your personality is 'The Entertainer'.  Here is a link to learn more about your personality https://www.16personalities.com/esfp-personality"
+        return message, a, b, c, d
+
+    elif a == 1 and b == 1 and c == 1 and d == 1:
+        message = "Ok, your personality is 'The Architect'.  Here is a link to learn more about your personality https://www.16personalities.com/intj-personality"
+        return message, a, b, c, d
+
+    elif a == 1 and b == 1 and c == 1 and d == 1:
+        message = "Ok, your personality is 'The Commander'.  Here is a link to learn more about your personality https://www.16personalities.com/estp-personality"
+        return message, a, b, c, d
+
+    elif a == 1 and b == 1 and c == 1 and d == 1:
+        message = "Ok, your personality is 'The Mediator'.  Here is a link to learn more about your personality https://www.16personalities.com/infp-personality"
+        return message, a, b, c, d
+
+    elif a == 2 and b == 2 and c == 2 and d == 1:
+        message = "Ok, your personality is 'The Advocate'.  Here is a link to learn more about your personality https://www.16personalities.com/infj-personality"
+        return message, a, b, c, d
+     elif a == 1 and b == 2 and c == 1 and d == 2:
         message = "Ok, your personality is 'The Debater'.  Here is a link to learn more about your personality https://www.16personalities.com/entp-personality"
         return message, a, b, c, d
 
@@ -70,9 +105,6 @@ def response_handler(body, a, b, c, d):
         message = "Ok, your personality is 'The Commander'.  Here is a link to learn more about your personality https://www.16personalities.com/estp-personality"
         return message, a, b, c, d
 
-    elif a == 1 and b == 1 and c == 1 and d == 2:
-        message = "Ok, your personality is 'The Entrepreneur'.  Here is a link to learn more about your personality https://www.16personalities.com/estp-personality"
-        return message, a, b, c, d
 
     print message, a, b, c, d
     return message, a, b, c, d
