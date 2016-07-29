@@ -1,15 +1,81 @@
-def response_handler(body):
-    message = ""
-    if body == 'start':
-        message = "You are in a boring class.  Do you 'take a nap' or 'take notes'?"
-    elif body == 'take a nap':
-        message = "You fall asleep forever...and ever...and ever.  Do you want to 'start' over?"
-    elif body == 'take notes':
-        message = "You furiously take notes as the teacher drones on.  Your friend taps you on the shoulder.  Do you 'turn around' or keep looking at your 'notes'"
-    elif body == 'turn around':
-        message = "You turn around, only to find that you have just stared into the eyes of a basilisk!  Oh well...do you want to 'start' over?"
-    elif body == 'notes':
-        message = "Unfortunately, this game is incomplete...please come back later for more!  Do you want to 'start' over?"
-    else:
-        message = "Invalid command.  Text 'start' to restart the game.  Or text 'pic please' for a random picture"
-    return message
+def response_handler(body, a, b, c, d):
+
+    message = "Today we will be testing your personality.  Please answer these questions truthfully.  Ok, first question.  Are you an 'extrovert' or an 'introvert'?"
+    if body == 'extrovert':
+        a = a + 1
+        message = "Ok so far we have that you are an extrovert.  This has eliminated half of the personalities so we are getting close!  Now are you 'sensing' or do you use your 'intuition'?"
+        return message, a, b, c, d 
+
+    elif body == 'sensing':
+        b = b + 1
+        message = "Ok so now we only have 4 more personalities. So are you 'thinking' or 'feeling'?"
+        return message, a, b, c, d   
+    
+    elif body == 'thinking':
+        c = c + 1
+        message = "Ok so we have two more personalities left. This question will give you your personality. Now, are you 'judging' or 'perceiving'?" 
+        return message, a, b, c, d       
+                
+    elif body == 'judging':
+        d = d + 1
+        message = "Ok, thank you for completing this quiz, now we will tell you your personality. Type in 'Yes' to see your personality!"
+        return message, a, b, c, d         
+                
+    elif body == 'perceiving':
+        d = d + 2
+        message =  "Ok, thank you for completing this quiz, now we will tell you your personality. Type in 'Yes' to see your personality!"
+        print message, a, b, c, d
+        return message, a, b, c, d 
+        
+    elif body == 'feeling':
+        c = c + 2
+        message = "Ok so we have two more personalities left. This question will give you your personality. Now, are you 'judging' or 'perceiving'?"
+        return message, a, b, c, d
+    
+    elif body == 'introvert':
+        a = a + 2
+        message = "Ok so far we have that you are an introvert.  This has eliminated half of the personalities so we are getting close!  Now are you 'sensing' or do you use your 'intuition'?"
+        return message, a, b, c, d 
+        
+    elif body == 'intuition':
+        b = b + 2
+        message = "Ok so now we only have 4 more personalities. So are you 'thinking' or 'feeling'?"
+        return message, a, b, c, d   
+
+    elif a == 1 and b == 2 and c == 1 and d == 2:
+        message = "Ok, your personality is 'The Debater'.  Here is a link to learn more about your personality https://www.16personalities.com/entp-personality"
+        return message, a, b, c, d
+
+    elif a == 2 and b == 2 and c == 1 and d == 2:
+        message = "Ok, your personality is 'The Logician'.  Here is a link to learn more about your personality https://www.16personalities.com/intp-personality"
+        return message, a, b, c, d
+
+    elif a == 1 and b == 1 and c == 1 and d == 2:
+        message = "Ok, your personality is 'The Entrepreneur'.  Here is a link to learn more about your personality https://www.16personalities.com/estp-personality"
+        return message, a, b, c, d
+
+    elif a == 2 and b == 1 and c == 1 and d == 2:
+        message = "Ok, your personality is 'The Virtuoso'.  Here is a link to learn more about your personality https://www.16personalities.com/istp-personality"
+        return message, a, b, c, d
+    
+    elif a == 1 and b == 1 and c == 2 and d == 2:
+        message = "Ok, your personality is 'The Entertainer'.  Here is a link to learn more about your personality https://www.16personalities.com/esfp-personality"
+        return message, a, b, c, d
+
+    elif a == 2 and b == 2 and c == 1 and d == 1:
+        message = "Ok, your personality is 'The Architect'.  Here is a link to learn more about your personality https://www.16personalities.com/intj-personality"
+        return message, a, b, c, d
+
+    elif a == 1 and b == 2 and c == 1 and d == 1:
+        message = "Ok, your personality is 'The Commander'.  Here is a link to learn more about your personality https://www.16personalities.com/estp-personality"
+        return message, a, b, c, d
+
+    elif a == 1 and b == 1 and c == 1 and d == 2:
+        message = "Ok, your personality is 'The Entrepreneur'.  Here is a link to learn more about your personality https://www.16personalities.com/estp-personality"
+        return message, a, b, c, d
+
+    print message, a, b, c, d
+    return message, a, b, c, d
+
+
+

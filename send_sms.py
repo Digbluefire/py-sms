@@ -8,9 +8,9 @@ from random import choice
 # Find these values at https://twilio.com/user/account
 account_sid = "ACc0490597eacb72bad3830567226cf615"
 auth_token = "650cbfadbc27bc6ed79f13858aea2b06"  
-fromnumber = "+3477369473"
-tonumber = "+18452700846"
-body_text = ""
+fromnumber = "+13477369473"
+tonumber = "+19179747217"
+body_text = "Okay"
 ######################################################
 
 client = TwilioRestClient(account_sid, auth_token)
@@ -35,13 +35,17 @@ def send_media(fromnumber, tonumber, media_links):
 
 	print "Media text successfully sent!"
 
-# send(fromnumber, tonumber, body_text)
+send(fromnumber, tonumber, body_text)
 
-media_links = ["http://i.telegraph.co.uk/multimedia/archive/03597/POTD_chick_3597497k.jpg", 'https://upload.wikimedia.org/wikipedia/commons/5/55/Phillips_Academy_Andover_Coat_of_Arms.png', 'http://vignette1.wikia.nocookie.net/pokemon/images/f/fc/025Pikachu_OS_anime_5.png/revision/20150101093704', "http://all4desktop.com/data_images/original/4238212-pictures.jpg", "http://i.telegraph.co.uk/multimedia/archive/03519/potd-squirrel_3519920k.jpg", "http://i.telegraph.co.uk/multimedia/archive/03571/potd-squirrel_3571152k.jpg"]
-send_media(fromnumber, tonumber, choice(media_links))
+# media_links = ["http://i.telegraph.co.uk/multimedia/archive/03597/POTD_chick_3597497k.jpg", 'https://upload.wikimedia.org/wikipedia/commons/5/55/Phillips_Academy_Andover_Coat_of_Arms.png', 'http://vignette1.wikia.nocookie.net/pokemon/images/f/fc/025Pikachu_OS_anime_5.png/revision/20150101093704', "http://all4desktop.com/data_images/original/4238212-pictures.jpg", "http://i.telegraph.co.uk/multimedia/archive/03519/potd-squirrel_3519920k.jpg", "http://i.telegraph.co.uk/multimedia/archive/03571/potd-squirrel_3571152k.jpg"]
+# send_media(fromnumber, tonumber, choice(media_links))
 
-# user = raw_input("Enter a text to send your TWILIO number.  Or enter q to quit: \n> ")
-# while user != "q":
-# 	response = response_handler(user)
-# 	send(fromnumber, tonumber, response)
-# 	user = raw_input("Enter a text to send your TWILIO number.  Or enter q to quit: \n> ")
+user = raw_input("> ")
+a = 0
+b = 0
+c = 0
+d = 0
+while user != "q":
+	response, a, b, c, d = response_handler(user, a, b, c, d)
+	send(fromnumber, tonumber, response)
+	user = raw_input("> ")

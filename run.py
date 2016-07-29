@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect
+from flask import Flask, request, redirect, session
 import twilio.twiml
 import os
 from handler import *
@@ -11,7 +11,17 @@ def receive_sms():
     body = request.values.get('Body', None)
     body = body.lower().strip()  # removes spaces and converts all to lower case
 
-    message = response_handler(body)
+    a = session.get('a', 0)
+    b = session.get('b', 0)
+    c = session.get('c', 0)
+    d = session.get('d', 0)
+
+    message, a, b, c, d = response_handler(body, a, b, c, d)
+
+    session['a'] = a
+    session['b'] = b
+    session['c'] = c
+    session['d'] = d
  
     resp = twilio.twiml.Response()
     resp.message(message)
