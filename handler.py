@@ -43,67 +43,67 @@ def response_handler(body, a, b, c, d):
         return message, a, b, c, d 
         
     elif a == 1 and b == 1 and c == 1 and d == 1:
-        message = "Ok, your personality is 'The Executive'.  Here is a link to learn more about your personality https://www.16personalities.com/entp-personality"
+        message = "Ok, your personality is 'The Executive'.  Here is a link to learn more about your personality https://www.16personalities.com/estj-personality"
         return message, a, b, c, d
 
     elif a == 1 and b == 1 and c == 1 and d == 2:
-        message = "Ok, your personality is 'The Entrepeneur'.  Here is a link to learn more about your personality https://www.16personalities.com/intp-personality"
+        message = "Ok, your personality is 'The Entrepeneur'.  Here is a link to learn more about your personality https://www.16personalities.com/estp-personality"
         return message, a, b, c, d
 
     elif a == 1 and b == 1 and c == 2 and d == 1:
-        message = "Ok, your personality is 'The Consul'.  Here is a link to learn more about your personality https://www.16personalities.com/estp-personality"
+        message = "Ok, your personality is 'The Consul'.  Here is a link to learn more about your personality https://www.16personalities.com/esfj-personality"
         return message, a, b, c, d
 
     elif a == 1 and b == 1 and c == 2 and d == 2:
-        message = "Ok, your personality is 'The Entertainer'.  Here is a link to learn more about your personality https://www.16personalities.com/istp-personality"
+        message = "Ok, your personality is 'The Entertainer'.  Here is a link to learn more about your personality https://www.16personalities.com/esfp-personality"
         return message, a, b, c, d
     
     elif a == 1 and b == 2 and c == 1 and d == 1:
-        message = "Ok, your personality is 'The Commander'.  Here is a link to learn more about your personality https://www.16personalities.com/esfp-personality"
+        message = "Ok, your personality is 'The Commander'.  Here is a link to learn more about your personality https://www.16personalities.com/entj-personality"
         return message, a, b, c, d
 
     elif a == 1 and b == 2 and c == 1 and d == 2:
-        message = "Ok, your personality is 'The Debater'.  Here is a link to learn more about your personality https://www.16personalities.com/intj-personality"
+        message = "Ok, your personality is 'The Debater'.  Here is a link to learn more about your personality https://www.16personalities.com/entp-personality"
         return message, a, b, c, d
 
     elif a == 1 and b == 2 and c == 2 and d == 1:
-        message = "Ok, your personality is 'The Protagonist'.  Here is a link to learn more about your personality https://www.16personalities.com/estp-personality"
+        message = "Ok, your personality is 'The Protagonist'.  Here is a link to learn more about your personality https://www.16personalities.com/enfj-personality"
         return message, a, b, c, d
 
     elif a == 1 and b == 2 and c == 2 and d == 2:
-        message = "Ok, your personality is 'The Campaigner'.  Here is a link to learn more about your personality https://www.16personalities.com/infp-personality"
+        message = "Ok, your personality is 'The Campaigner'.  Here is a link to learn more about your personality https://www.16personalities.com/enfp-personality"
         return message, a, b, c, d
 
     elif a == 2 and b == 1 and c == 1 and d == 1:
-        message = "Ok, your personality is 'The Logistician'.  Here is a link to learn more about your personality https://www.16personalities.com/infj-personality"
+        message = "Ok, your personality is 'The Logistician'.  Here is a link to learn more about your personality https://www.16personalities.com/istj-personality"
         return message, a, b, c, d
     
     elif a == 2 and b == 1 and c == 1 and d == 2:
-        message = "Ok, your personality is 'The Virtuoso'.  Here is a link to learn more about your personality https://www.16personalities.com/entp-personality"
+        message = "Ok, your personality is 'The Virtuoso'.  Here is a link to learn more about your personality https://www.16personalities.com/istp-personality"
         return message, a, b, c, d
 
     elif a == 2 and b == 1 and c == 2 and d == 1:
-        message = "Ok, your personality is 'The Defender'.  Here is a link to learn more about your personality https://www.16personalities.com/intp-personality"
+        message = "Ok, your personality is 'The Defender'.  Here is a link to learn more about your personality https://www.16personalities.com/isfj-personality"
         return message, a, b, c, d
 
     elif a == 2 and b == 1 and c == 2 and d == 2:
-        message = "Ok, your personality is 'The Adventurer'.  Here is a link to learn more about your personality https://www.16personalities.com/estp-personality"
+        message = "Ok, your personality is 'The Adventurer'.  Here is a link to learn more about your personality https://www.16personalities.com/isfp-personality"
         return message, a, b, c, d
 
     elif a == 2 and b == 2 and c == 1 and d == 1:
-        message = "Ok, your personality is 'The Architect'.  Here is a link to learn more about your personality https://www.16personalities.com/istp-personality"
+        message = "Ok, your personality is 'The Architect'.  Here is a link to learn more about your personality https://www.16personalities.com/intj-personality"
         return message, a, b, c, d
     
     elif a == 2 and b == 2 and c == 1 and d == 2:
-        message = "Ok, your personality is 'The Logician'.  Here is a link to learn more about your personality https://www.16personalities.com/esfp-personality"
+        message = "Ok, your personality is 'The Logician'.  Here is a link to learn more about your personality https://www.16personalities.com/intp-personality"
         return message, a, b, c, d
 
     elif a == 2 and b == 2 and c == 2 and d == 1:
-        message = "Ok, your personality is 'The Advocate'.  Here is a link to learn more about your personality https://www.16personalities.com/intj-personality"
+        message = "Ok, your personality is 'The Advocate'.  Here is a link to learn more about your personality https://www.16personalities.com/infj-personality"
         return message, a, b, c, d
 
     elif a == 2 and b == 2 and c == 2 and d == 2:
-        message = "Ok, your personality is 'The Mediator'.  Here is a link to learn more about your personality https://www.16personalities.com/estp-personality"
+        message = "Ok, your personality is 'The Mediator'.  Here is a link to learn more about your personality https://www.16personalities.com/infp-personality"
         return message, a, b, c, d
 
     else:
