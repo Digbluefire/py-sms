@@ -106,8 +106,7 @@ def response_handler(body, a, b, c, d):
         message = "Ok, your personality is 'The Mediator'.  Here is a link to learn more about your personality https://www.16personalities.com/infp-personality"
         return message, a, b, c, d
 
-    else:
-        return "Type 'q' and please start over thank you", a, b, c, d
+    
 
     print message, a, b, c, d
     return message, a, b, c, d
